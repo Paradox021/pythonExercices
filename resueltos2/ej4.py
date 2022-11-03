@@ -15,7 +15,6 @@
 ###### pon aquí tu código
 def get_final_price(n1, n2):
     final_price = n1*n2*(100-get_discount(n2))/100
-
     return round(final_price, 2)
 
 def get_discount(n):

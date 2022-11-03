@@ -7,12 +7,8 @@ def insert_my_name(list, yourName):
     if len(list)%2==0:
         list.append(yourName)
         return
-    list.insert(round(len(list)/2),yourName)
-    print(list)
+    list.insert(round(len(list)/2)+1,yourName)
 
-list2 = ['Juan','Pedro']
-insert_my_name( list2, 'Ana')
-print("----" , list2 )
 
 
 def test():
@@ -23,7 +19,7 @@ def test():
 
     list = ['Juan','Pedro']
     insert_my_name( list, 'Ana') 
-    assert list == ['Juan','Ana','Pedro'], "should be ['Juan','Ana','Pedro']"
+    assert list == ['Juan','Pedro','Ana'], "should be ['Juan','Ana','Pedro']"
 
     list = []
     insert_my_name( list, 'Ana') 

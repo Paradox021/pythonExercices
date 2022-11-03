@@ -10,7 +10,7 @@
 
 def birthday(n1, n2):
     edad = n2-n1
-    return 'tienes '+str(edad)+ ' años'
+    return "tienes {} años".format(edad)
 
 
 def test():
