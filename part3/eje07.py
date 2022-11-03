@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Guarda en una nueva variable llamada inverse_fruits la lista fruits pero al revés
 
 

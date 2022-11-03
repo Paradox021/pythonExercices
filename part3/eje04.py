@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # función llamada last_value que devuelva el último valor de la lista que se le pasa como parámetro
 # si la lista está vacía, o no se le pasa una lista debe devolver None
 # si la lista tiene un solo elemento debe devolver ese elemento

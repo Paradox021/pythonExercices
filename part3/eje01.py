@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # La siguiente función trata de añadir un nuevo elemento a la tupla.
 # ¿Por qué no funciona?
 # ¿Cómo se puede arreglar?

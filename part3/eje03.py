@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Dada una lista llamada teachers, haz un duplicado de la misma en otra lista llamada employees
 
 teachers = ['Juan', 'Pedro', 'Ana', 'Maria', 'Luis']

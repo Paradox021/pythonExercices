@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Crea una colección de 4 elementos
 # El primer elemento debe ser un número entero
 # El segundo elemento debe ser una cadena de texto
