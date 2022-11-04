@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # función llamada insert_my_name que añada tu nombre a una lista
-# Si la lista tiene un número impar de elementos, añade tu nombre en el medio
-# Si la lista tiene un número par de elementos, añade tu nombre al final
+# Si la lista tiene un número par de elementos, añade tu nombre en el medio
+# Si la lista tiene un número impar de elementos, añade tu nombre al final
 
 def insert_my_name(list, yourName):
     # your code here

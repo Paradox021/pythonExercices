@@ -3,10 +3,10 @@
 # crea otra función llamada getValues(data) que reciba un diccionario y devuelva una lista con los valores del diccionario
 
 def get_keys(data):
-    return list(data.keys())
+    return ...
 
 def get_values(data):
-    return list(data.values())
+    return ...
 
 
 def test():

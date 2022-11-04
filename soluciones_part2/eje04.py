@@ -10,15 +10,21 @@
 # Escribir otra función llamada get_final_price que se le pase el precio del producto y la cantidad de productos a comprar y devuelva el coste del producto final
 # La función get_final_price debe usar la función get_discount
 
+def get_discount(count):
+    if count<5: return 0
+    if count<20: return 10
+    if count<50: return 20
+    return 30
 
+def get_final_price(price, count):
+    return price*count*(100-get_discount(count))/100.0
 
-###### pon aquí tu código
 
 def test():
     assert get_final_price(10, 4) == 40, "Should be 40"
     assert get_final_price(10, 0) == 0, "Should be 0"
     assert get_final_price(10, 5) == 45, "Should be 45"
-    assert get_final_price(10, 20) == 160, "Should be 160"
+    assert get_final_price(10, 20) == 160, "Should be 180"
     assert get_final_price(11, 22) == 193.6, "Should be 193.6"
     assert get_final_price(12, 61) == 512.4, "Should be 512.4"
     assert get_discount(100) == 30, "Should be 30"
