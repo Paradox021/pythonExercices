@@ -6,7 +6,7 @@ flowers = ['rosa','crisantemo','gladiolo','margarita','rosa','gladiolo','jacinto
 
 def remove_duplicates(data):
     # your code here
-    lista = list(dict.fromkeys(data))
+    lista = list(set(data))
     return lista
 
 def test():
