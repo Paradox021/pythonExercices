@@ -4,10 +4,29 @@
 
 cols = 10
 
-def get(movs):
-    # your code here
-    return None
-
+def get(movs): 
+    pos=['N','E','S','W'] 
+    dir = 'N' 
+    x = 0 
+    y = 0 
+    for m in movs: 
+        if m == 'M' and dir == 'N': y = (y + 1) % cols 
+        if m == 'M' and dir == 'S': y = (y - 1) % cols 
+        if m == 'M' and dir == 'E': x = (x + 1) % cols 
+        if m == 'M' and dir == 'W': x = (x - 1) % cols 
+        elif m == 'R': 
+            dir = pos[(pos.index(dir) + 1) % 4] 
+            # if dir == 'N': dir = 'E' 
+            # elif dir == 'S': dir = 'W' 
+            # elif dir == 'E': dir = 'S'
+            # elif dir == 'W': dir = 'N'
+        elif m == 'L': 
+            dir = pos[(pos.index(dir) - 1) % 4] 
+            # if dir == 'N':dir = 'W' 
+            # elif dir == 'S':dir = 'E' 
+            # elif dir == 'E':dir = 'N' 
+            # elif dir == 'W':dir = 'S' 
+    return (x, y, dir)
 
 def test():
     assert get("M") == (0, 1, 'N'), "M"

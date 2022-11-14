@@ -11,7 +11,7 @@ def readPhrase(phrase):
 
 
 def test():
-    assert readPhrase("hola _como estas_ _yo bien_ gracias ") == "hola   gracias", "You hava 2 ducks"
+    assert readPhrase("hola _como estas_ _yo bien_ gracias") == "hola   gracias", "Should be hola   gracias"
     pass
 
 if __name__ == "__main__":
