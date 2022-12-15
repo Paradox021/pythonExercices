@@ -5,7 +5,7 @@ def get_price_final(file):
     pass
 
 def test():
-    assert get_price_final('part07/datos.txt') == 19.77, "All products should be 19.77 €"
+    assert get_price_final('part7/datos.txt') == 19.77, "All products should be 19.77 €"
 
 if __name__ == "__main__":
     test()

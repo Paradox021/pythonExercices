@@ -7,6 +7,10 @@
 # Si los 3 parametros no son de tipo entero se devolverá None
 
 ###### pon aquí tu código
+def get_points(wins,lost,tie):
+    if not type(wins) == int or not type(lost) == int or not type(tie) == int:
+        return None
+    return wins*3 + tie
 
 
 

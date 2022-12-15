@@ -4,7 +4,8 @@ import math
 
 # Crear una función llamada get_distance(ax,ay, bx,by) que devuelva la distancia entre dos puntos del espacio 2D
 
-
+def get_distance(ax,ay, bx,by):
+    return math.sqrt((bx-ax)**2 + (by-ay)**2 )
 
 def test():
     assert math.isclose(get_distance(0,0, 1,1), 1.414213562), "Should be 1.414"

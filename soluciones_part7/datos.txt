@@ -1,0 +1,5 @@
+nombre:kiwi; precioKl:2.49; stock:6kl
+nombre:arandanos; precioKl:12; stock:6kl
+nombre:platano; precioKl:1.39; stock:6kl
+nombre:naranja; precioKl:2.1; stock:6kl
+nombre:limones; precioKl:1.79; stock:6kl

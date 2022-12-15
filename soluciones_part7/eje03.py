@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 # Crea una funcion llamada avg que reciba una lista de numeros y devuelva la media de todos ellos
 # usa funciones lambda y orden superior
+
 import functools
 
 def avg(numbers):
-    return sum(numbers)/len(numbers)
+    f = lambda x,y: x+y
+    return functools.reduce(f,numbers)/len(numbers)
 
 
 def test():

@@ -9,12 +9,22 @@
 # - category: ropa
 
 
-class 
+class Product:
+    def __init__(self, name, price, dto, category):
+        self.name=name
+        self.price=price
+        self.dto=dto
+        self.category=category
+    def get_price_final(self):
+        return self.price - self.price * self.dto / 100
+
+    def __str__(self):
+        return self.name+'-'+str(self.price)
 
 
-product_to_send = 
-
+product_to_send = Product('Pantalon', 100, 10, 'ropa')
 def test():
+    #assert type(Product).__name__ == 'classobj', "Product should be a class"
     assert isinstance(product_to_send,Product), "product_to_send should be a Product"
     assert product_to_send.name == 'Pantalon', "product_to_send.name should be 'Pantalon'"
     assert product_to_send.price == 100, "product_to_send.price should be 100"

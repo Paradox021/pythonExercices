@@ -4,8 +4,19 @@
 # La clase tendrá un método llamado off que ponga el estado del ordenador a False
 # Se podrán sumar 2 ordenadores (sobrecarga del operador +), el resultado será la suma de los precios de los ordenadores
 
-
-
+class Computer:
+    def __init__(self, model, ram, price):
+        self.model=model
+        self.ram=ram
+        self.price=price
+        self.state=False
+    def start(self):
+        self.state=True
+    def off(self):
+        self.state=False
+    def __add__(self, other):
+        return self.price + other.price
+    
 def test():
     c1=Computer('HP',8,1000)
     c2=Computer('HP',4,450)
